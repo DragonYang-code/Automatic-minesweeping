@@ -13,6 +13,10 @@ win+R打开cmd，进入Automatic-minesweeping文件夹下，输入命令:
 
 >python main.py
 
-如果缺少运行环境，请根据缺少的部分按照requirements.txt中的版本进行安装
+如果缺少运行环境，请根据缺少的部分按照requirements.txt中的版本进行安装：
+
+根据提示信息，找到对应包名，然后在cmd中执行：
+
+>pip install 包名
 
 如果遇到扫雷出错，请稍微增加main.py中delay变量的值
