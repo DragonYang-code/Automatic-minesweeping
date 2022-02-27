@@ -4,7 +4,7 @@
 #优化4：优化图片识别的速度
 #优化5：将雷的信息保存在内存中，不再插旗
 #优化6：每次仅对上次未知的格子进行数字转换
-#可优化7：换鼠标点击事件的接口
+#优化7：换鼠标点击事件的接口
 #可尝试优化8：直接执行点击操作 (负优化)
 #专家难度时间 59->22
 
@@ -29,7 +29,8 @@ bleft=0
 btop=0
 bm=0
 bn=0
-
+#每轮睡眠延迟
+delay=0.15
 #空：0，数字:1-8,雷:-1,非雷:-2,未知: -3
 #棋盘
 board=[ [-100]*100 for i in range(100)]#棋盘本身
@@ -337,7 +338,7 @@ while True:
             #pyautogui.click(x, y, button='left')
             mouse_click(x,y)
 
-    time.sleep(0.13)#睡一会，避免棋盘扫描错误
+    time.sleep(delay)#睡一会，避免棋盘扫描错误
 
     if len(data)==0:
         smile=pyautogui.locateOnScreen('pictures/smile.png')
