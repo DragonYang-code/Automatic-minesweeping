@@ -26,4 +26,4 @@ A script for automatic minesweeping
 
 如果遇到扫雷出错，请稍微增加main.py中delay变量的值
 
-我想要测试一下git
+我想要测试一下g223it
